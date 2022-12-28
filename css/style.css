@@ -1,0 +1,151 @@
+    /*Auter Gbamele Alexandre tuto de Vijay Thao;
+    Theme : Restaurant Food Order;
+    */
+
+    /*Css for all */
+    *{
+        margin: 0 0;
+        padding: 0 0;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        padding: 1%;
+    }
+    .img-responsive{
+        width: 100%;
+    }
+    .img-curve{
+        border-radius: 15px;
+    }
+    .text-right{
+        text-align: right;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-left{
+        text-align: left;
+    }
+    .text-white{
+        color: white;
+    }
+    .clearfix{
+        clear: both;
+        float: none;
+    }
+    a{
+        color: #ff6b81;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #ff4757;
+    }
+
+    .btn{
+        padding: 1%;
+        border: none;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .btn-primary{
+        background-color: #ff6b81;
+        color: white;
+        cursor: pointer;
+    }
+    .btn-primary:hover{
+        color: white;
+        background-color: #ff4757;
+    }
+    h2{
+        color: #2f3542;
+        font-size: 2rem;
+        margin-bottom: 2%;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .float-container{
+        position: relative;
+    }
+    .float-text{
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+    }
+    fieldset{
+        border: 1px solid white;
+        margin: 5%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    .error{
+        padding: 2%;
+        color: red;
+    }
+    .success{
+        padding: 2%;
+        color: green;
+    }
+
+    /*css for navbar*/
+    .logo{
+        /*height: 50px;*/
+        width: 10%;
+        float: left;
+        border: 1px solid #ff4757;
+    }
+    .menu{
+        line-height: 60px;
+    }
+    .menu ul {
+        list-style-type: none;
+    }
+   /* .menu ul li{
+
+    }*/
+
+    .fond-bleu{
+        background-color: #5352ed;
+        margin: 5%;
+        padding: 3%;
+    }
+    .imag-cat{
+        padding: 1%;
+        margin: 3%;
+       
+    }
+    .food-menu-box{
+        background-color: #bdbfc4;
+        padding: 1%;
+        margin: 2%;
+
+        /*float: left;*/
+        display: inline-block;
+        height: 50%;
+        width: 200px;
+        color: black;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .food-menu-img{
+       /** background: #ff4757;*/
+        border-radius: 5%;
+        /*height: 100vh;*/
+        width: 200px;
+    }
+
+    .food-menu-desc{
+        background-color: #e5e8ee;
+        width: 100%;
+        height: 40%;
+        border-radius: 5px;
+    }
+    .categories-space{
+       
+        margin: 1%;
+        display: inline-block;
+       /* float: left;*/
+    }

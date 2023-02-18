@@ -1,5 +1,5 @@
 <?php include('partials-front/menu.php'); ?>
-<?php include('config/constants.php'); ?>
+<!-- <?php include('config/constants.php'); ?> -->
 
 <!--Categories Section Starts here-->
 <section class="categories">
@@ -22,7 +22,7 @@
                 $title = $row['title'];
                 $image_name = $row['image_name'];
 
-        ?>
+                ?>
                 <a href="category-foods.html">
                     <div class="box-3 float-container">
                         <?php
@@ -32,30 +32,45 @@
                             echo "<div class='error'>image not found</div>";
                         } else {
                             //image available
-                        ?>
-                            <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" alt="<?php echo $title; ?>" class="img-responsive img-curve" width="200px">
-                        <?php
+                            ?>
+                            <div class=" container category">
+                                <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>"
+                                    alt="<?php echo $title; ?>">
+                                <style>
+                                    img {
+                                        width: 200px;
+                                        height: 200px;
+                                    }
+                                    .category{
+                                        border: red 2px solid;
+                                        display: flex;
+                                    }
+                                </style>
+                            </div>
+                            <?php
                         }
                         ?>
 
 
-                        <h3 class="float-text text-white"><?php echo $title; ?></h3>
+                        <h3 class="float-text text-white">
+                            <?php echo $title; ?>
+                        </h3>
 
                     </div>
                 </a>
-        <?php
+                <?php
             }
         } else {
             //Category not available
             echo "<div class='error'>Category not added </div>";
         }
         /* <?php
-                //create sql query to display categories from database
-            
-                /
-                
-                
-            ?>*/
+        //create sql query to display categories from database
+        
+        /
+        
+        
+        ?>*/
 
         ?>
 

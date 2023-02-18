@@ -27,7 +27,7 @@
             </tr>
             <?php
             //Get all the orders from database
-            $sql = "SELECT * FROM tbl_order ORDER BY id DESC"; //Display the latest Order at First
+            $sql = "SELECT * FROM tbl_order ORDER BY order_id DESC"; //Display the latest Order at First
             //Execute Query
             $res = mysqli_query($conn, $sql);
             //Count the rows

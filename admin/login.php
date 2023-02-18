@@ -31,9 +31,9 @@
 
                 <form action="" method="post" class="text-center">
                     username : <br>
-                    <input type="text" name="username" placeholder="Enter username" .img-responsive{ width: 100%;><br><br>
+                    <input type="text" name="username" placeholder="Enter username" .img-responsive{ width: 100%};><br><br>
                     Password : <br>
-                    <input type="password" name="password" placeholder="Enter Password" .img-responsive{ width: 100%;><br><br>
+                    <input type="password" name="password" placeholder="Enter Password" .img-responsive{ width: 100%};><br><br>
                     <input type="submit" name="submit" value="Login" class="btn-primary"><br><br>
                 </form>
                 <p class="text-center">Créer par - <a href="">AlexDev</a></p>
@@ -43,16 +43,16 @@
 
         </html>
         <?php
-        //Chech whether the submit Button is clicked or not
+       // Chech whether the submit Button is clicked or not
         if (isset($_POST['submit'])) {
-            //Process for Login
-            //1. Get the Data from Logi form
-            //$username = $_POST['username'];
-            //$password  = md5($_POST['password']);
+           // Process for Login
+           //1. Get the Data from Logi form
+            $username = $_POST['username'];
+            $password  = ($_POST['password']);
 
             $username = mysqli_real_escape_string($conn, $_POST['username']);
 
-            $row_password  = md5($_POST['password']);
+            $row_password  = ($_POST['password']);
             $password  = mysqli_real_escape_string($conn, $row_password);
 
             //2. SQL to check whether the user with username and password exists or not
@@ -69,12 +69,12 @@
                 $_SESSION['login'] = "<div class='success'>connexion avec succès.</div>";
                 $_SESSION['user'] = $username; //To check whether the user is logged in or not and logout will unset it
 
-                //Redirect to home page/Dashboard
-                header('location:' . SITEURL . "admin/");
+                // //Redirect to home page/Dashboard
+                 header('location:' . SITEURL . "admin/index.php");
             } else {
-                //user not available
+               // user not available
                 $_SESSION['login'] = "<div class='error text-center' >Nom d'utilisateur ou mot de pass incorrect.</div>";
-                //Redirect to home page/Dashboard
+               // Redirect to login page/Dashboard
                 header('location:' . SITEURL . "admin/login.php");
             }
         }

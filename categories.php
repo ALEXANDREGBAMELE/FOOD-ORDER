@@ -41,10 +41,7 @@
                                         width: 200px;
                                         height: 200px;
                                     }
-                                    .category{
-                                        border: red 2px solid;
-                                        display: flex;
-                                    }
+                                    
                                 </style>
                             </div>
                             <?php

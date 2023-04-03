@@ -10,7 +10,7 @@
         </div>
     </section>
     <!--food search section Ends here-->
-
+    
     <!--Food menu section starts here-->
     <section class="food-menu">
         <div class="container">

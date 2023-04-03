@@ -1,0 +1,9 @@
+
+*{
+    
+}
+.baniere{
+    height: 50vh;
+    background-image: url("../assets/img/baniere.avif");
+    background-size: cover;
+}

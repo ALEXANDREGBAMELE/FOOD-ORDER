@@ -11,6 +11,7 @@
         $res2 = mysqli_query($conn, $sql2);
         //Get the value based on query executed
         $row2 = mysqli_fetch_assoc($res2);
+        // print_r($row2);
         //Get the individual values of selected Food
         $title = $row2['title'];
         $description = $row2['description'];
@@ -42,7 +43,7 @@
                 <tr>
                     <td>Description: </td>
                     <td>
-                        <textarea name="description"  cols="30" rows="5" value="<?php echo $description; ?>" ></textarea>
+                        <textarea name="description"  cols="30" rows="5" ><?php echo $description; ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -148,7 +149,7 @@
         <?php
             if(isset($_POST['submit']))
             {
-                //echo "Button clicked";
+                echo "Button clicked";
 
                 //1. Get all the details from the form
                 $id = $_POST['id'];
@@ -159,6 +160,7 @@
                 $category = $_POST['category'];
                 $featured = $_POST['featured'];
                 $active = $_POST['active'];
+                
                 //2. Upload the image if selected
                 // Check whether upload button is clicked or not
                 if(isset($_FILES['image']['name']))
